@@ -15,6 +15,20 @@
   font-family: var(--main-font-family);
   font-size: 14px;
 }
+.container {
+  width: 1200px;
+  background-color: red;
+  padding: 0 15px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
 .link {
   text-decoration: none;
 }
@@ -88,6 +102,7 @@
 .hero-btn:hover,
 .hero-btn:focus {
   cursor: pointer;
+  background-color: #188ce8;
 }
 
 /* Паттерн для скрытия заголовка */
