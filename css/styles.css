@@ -10,8 +10,10 @@
   --nav-gap: 32px;
 }
 /* Общее */
-/* * {
-  outline: 1px solid tomato; }*/
+* {
+  outline: 1px solid tomato;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -123,8 +125,6 @@ ul {
 /* Герой */
 .hero {
   background-color: #2f303a;
-}
-.hero > .container {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -217,26 +217,39 @@ ul {
   letter-spacing: 0.03em;
   text-align: center;
 }
-.work-list,
-.team-list {
+.work-list {
   display: flex;
-  justify-content: space-between;
+  margin-left: -30px;
+}
+.work-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  overflow: hidden;
 }
 .work-img,
 .team-img,
 .services-img {
   display: block;
 }
+
 .team {
   background-color: #f5f4fa;
 }
-
+.team-list {
+  display: flex;
+  margin-left: -30px;
+}
 .team-item {
+  flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  overflow: hidden;
+
   background-color: #ffffff;
   border-radius: 4px;
 }
-.team-img {
-  margin-bottom: 30px;
+.team-box {
+  text-align: center;
+  padding: 30px;
 }
 .team-subtitle {
   margin-bottom: 10px;
@@ -244,23 +257,17 @@ ul {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 .team-text {
-  margin-bottom: 30px;
-
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
   letter-spacing: 0.03em;
 }
 /* Футер */
 .footer-contacts {
   background-color: #2f303a;
-}
-.footer-contacts > .container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
