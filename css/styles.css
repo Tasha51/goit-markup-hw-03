@@ -10,9 +10,9 @@
   --nav-gap: 32px;
 }
 /* Общее */
-* {
+/* * {
   outline: 1px solid tomato;
-}
+} */
 
 .page {
   display: flex;
