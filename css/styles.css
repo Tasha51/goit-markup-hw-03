@@ -201,8 +201,11 @@ ul {
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
+.features-item {
+  width: 270px;
+}
 .features-item:not(:first-child) {
-  padding-left: 30px;
+  margin-left: 30px;
 }
 /* Секция Наша работа и Наша команда*/
 .work.section {
